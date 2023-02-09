@@ -31,12 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    "polls.apps.PollsConfig",
+    'django.contrib.admin', # Administrador de Django
+    'django.contrib.auth', # Autenticación de usuarios
+    'django.contrib.contenttypes', # Manejar formatos de archivos
+    'django.contrib.sessions', # Sesiones de usuarios
+    'django.contrib.messages', # Comunicaciones entre usuarios
+    'django.contrib.staticfiles', # Manejar archivos estaticos
 ]
 
 MIDDLEWARE = [
@@ -75,7 +76,7 @@ WSGI_APPLICATION = 'premiosplatziapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3', # Acá se debe cambiar el motor de base de datos
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
@@ -105,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Lima'
 
 USE_I18N = True
 
